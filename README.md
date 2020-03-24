@@ -1,4 +1,4 @@
-# ros-a
+# ros-ag-hugo
 Website for rosagriculture.org.
 
 ## Make the website locally on Ubuntu
