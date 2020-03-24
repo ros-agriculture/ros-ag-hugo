@@ -39,7 +39,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           src_path: /.
           dst_path: /.
-          dst_owner: droter
+          dst_owner: ros-agriculture
           dst_repo_name: ros-agriculture.github.io
           dst_branch: master
           src_branch: gh-pages
