@@ -1,4 +1,4 @@
-name: Hugo
+name: Copy
 
 on:
   push:
