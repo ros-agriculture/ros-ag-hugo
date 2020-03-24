@@ -1,0 +1,24 @@
+name: Hugo
+
+on:
+  push:
+    branches: [ gh-pages ]
+  pull_request:
+    branches: [ gh-pages ]
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copycat
+      uses: andstor/copycat-action@v3
+      with:
+        #personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        src_path: /.
+        dst_path: /.
+        dst_repo_name: ros-agriculture.github.io
+        dst_branch: master
+        src_branch: gh-pages
+        src_wiki: false
+        dst_wiki: false
